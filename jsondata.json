@@ -1,0 +1,169 @@
+[
+  {
+    "name": "maro velasquez",
+    "email": "vep@gmail.com",
+    "password": "123456",
+    "phone": "3045 1216 6",
+    "company": "emotiva",
+    "location": "calle 54",
+    "permissions": [
+      "read my profile",
+      "read dashboard",
+      "read ais realtime",
+      "read ais historic",
+      "read realtime",
+      "create trip",
+      "update trip",
+      "finish trip",
+      "read historic",
+      "read roles",
+      "create roles",
+      "update roles",
+      "delete roles",
+      "create users",
+      "read users",
+      "update users",
+      "delete users",
+      "restore users",
+      "read devices"
+    ],
+    "devices": [
+      {
+        "name": "zambrano",
+        "uniquId": "860896050858265"
+      },
+      {
+        "name": "barranquilla",
+        "uniquId": "860896050944651"
+      },
+      {
+        "name": "mompox",
+        "uniquId": "860896050858034"
+      },
+      {
+        "name": "soledad",
+        "uniquId": "860896051154896"
+      }
+    ]
+  },
+  {
+    "name": "ana lopez",
+    "email": "ana@gmail.com",
+    "password": "abcdef",
+    "phone": "3125 8923 7",
+    "company": "emotiva",
+    "location": "avenida 12",
+    "permissions": [
+      "read dashboard",
+      "read ais realtime",
+      "read realtime",
+      "create trip",
+      "update trip",
+      "finish trip"
+    ],
+    "devices": [
+      {
+        "name": "cartagena",
+        "uniquId": "1"
+      },
+      {
+        "name": "santa marta",
+        "uniquId": "2"
+      }
+    ]
+  },
+  {
+    "name": "luis perez",
+    "email": "luisp@gmail.com",
+    "password": "654321",
+    "phone": "3205 7841 2",
+    "company": "emotiva",
+    "location": "carrera 7",
+    "permissions": [
+      "read my profile",
+      "read dashboard",
+      "read ais historic",
+      "read roles",
+      "read users",
+      "update users"
+    ],
+    "devices": [
+      {
+        "name": "cartagena",
+        "uniquId": "1"
+      }
+    ]
+  },
+  {
+    "name": "sofia martinez",
+    "email": "sofia@gmail.com",
+    "password": "pass123",
+    "phone": "3118 2307 5",
+    "company": "emotiva",
+    "location": "calle 9",
+    "permissions": [
+      "read devices",
+      "read ais realtime",
+      "read ais historic",
+      "create users",
+      "delete users"
+    ],
+    "devices": [
+      {
+        "name": "medellin",
+        "uniquId": "7"
+      },
+      {
+        "name": "bogota",
+        "uniquId": "8"
+      }
+    ]
+  },
+  {
+    "name": "julian diaz",
+    "email": "julian@gmail.com",
+    "password": "julian123",
+    "phone": "3194 7542 8",
+    "company": "emotiva",
+    "location": "avenida 45",
+    "permissions": [
+      "read dashboard",
+      "read historic",
+      "create roles",
+      "delete roles",
+      "read users",
+      "update users",
+      "restore users"
+    ],
+    "devices": [
+      {
+        "name": "medellin",
+        "uniquId": "7"
+      },
+      {
+        "name": "bogota",
+        "uniquId": "8"
+      }
+    ]
+  },
+  {
+    "name": "camila rodriguez",
+    "email": "camila@gmail.com",
+    "password": "rodriguez",
+    "phone": "3008 6598 1",
+    "company": "emotiva",
+    "location": "carrera 15",
+    "permissions": [
+      "read dashboard",
+      "read realtime",
+      "finish trip",
+      "read devices"
+    ],
+    "devices": [
+      {
+        "name": "manizales",
+        "uniquId": "11"
+      }
+    ]
+  }
+]

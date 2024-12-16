@@ -11,6 +11,7 @@ function readCSV(filePath, callback) {
     .on('data', (row) => {
       const deviceData = {
         deviceid: parseInt(row.deviceid),
+        uniquid: parseInt(row.uniquid),
         latitude: parseFloat(row.latitude),
         longitude: parseFloat(row.longitude),
         altitude: parseFloat(row.altitude),
