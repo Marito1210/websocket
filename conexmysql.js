@@ -55,6 +55,39 @@ app.post('/get-chats', (req, res) => {
     });
 });
 
+// Endpoint para obtener los mensajes de un grupo
+app.post('/get-group-messages', (req, res) => {
+    // Obtén los parámetros del cuerpo de la solicitud
+    const { groupId, startDate, endDate } = req.body;
+
+    // Validación básica
+    if (!groupId) {
+        return res.status(400).json({ error: 'El parámetro groupId es obligatorio' });
+    }
+    if (!startDate || !endDate) {
+        return res.status(400).json({ error: 'Los parámetros startDate y endDate son obligatorios' });
+    }
+
+    // Consulta parametrizada para evitar inyección SQL
+    const query = `
+        SELECT * FROM group_messages
+        WHERE groupId = ?
+        AND timestamp BETWEEN ? AND ?
+        ORDER BY timestamp DESC
+    `;
+    const values = [groupId, startDate, endDate];
+
+    // Ejecutar la consulta
+    db.query(query, values, (err, results) => {
+        if (err) {
+            console.error('Error al ejecutar la consulta:', err);
+            return res.status(500).json({ error: 'Error al obtener los datos' });
+        }
+        res.json(results); // Devolver los resultados como JSON
+    });
+});
+
+
 // Inicia el servidor
 app.listen(3000, () => {
     console.log('Servidor corriendo en http://192.168.1.10:3000');
